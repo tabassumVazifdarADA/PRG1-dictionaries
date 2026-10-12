@@ -8,9 +8,21 @@ every customer stands at closing time.
 ## Predict
 
 - How many customers are in the dictionary when the program starts, and how many
+3
+4
   when it ends?
 - What are alice's, bob's and siobhan's totals at the end?
+
+160
+100
+207
 - Which tier does each customer land in?
+bronze
+bronze
+silver
+
+
+
 
 ## Run
 
@@ -24,11 +36,15 @@ wrong.
 - chen was not in the dictionary at the start and is in it at the end. Which
   single line put them there? Nothing in this program explicitly creates a new
   customer, so what did?
+  get line
 - bob finishes on exactly 100, which is the bronze threshold. Which tier does he
   get, and which character in `tier` decides that? This is the fourth time this
   week you have met a boundary decided by one character.
+  >=
 - `points.items()` gives you the name and the total together. What would you have
   had to write instead if you only had the names?
+
+  
 
 ## Modify
 

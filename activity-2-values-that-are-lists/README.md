@@ -9,10 +9,19 @@ single number.
 
 Five lines of output. Write them all down before running. The fourth and fifth
 are the ones to think hardest about.
+99 98 95
+99
+3
+98
+error/ none
 
 ## Run
 
 Execute and compare.
+
+last 2:
+true
+false
 
 ## Investigate
 
@@ -21,9 +30,13 @@ Execute and compare.
   what the second one is asking for.
 - `len(exam_results["steve"])` gives 3. What would `len(exam_results)` give?
   Predict, then check.
+3
+
 - The last two lines both use `in`, and one is True while the other is False.
   What is `in` actually searching, and what would `"steve" in exam_results` do
   instead?
+if that value is in the dictionary/  key
+
 
 ## Modify
 

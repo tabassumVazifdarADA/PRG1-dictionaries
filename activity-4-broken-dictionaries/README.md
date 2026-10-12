@@ -22,9 +22,16 @@ Execute it. All three are wrong.
 - The class average comes out at 70.2. Work out the true average of the grades
   that actually exist. Why is the printed figure lower, and which is the correct
   answer to the question the function's name asks?
+
+
+
+
 - `is_registered` returns False for Kwame, who is plainly in the dictionary.
   Read the line carefully. What is it searching, and what did the author think
   it was searching?
+
+
+  
 - Read the docstring on `record_grade`, then look at what happened to Kai. The
   code does something the docstring says it should not.
 
