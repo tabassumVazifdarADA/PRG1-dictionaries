@@ -64,13 +64,23 @@ def errors_by_user(lines):
     Use failed_requests to get the lines you need; do not walk through
     LOG_LINES again yourself.
     """
-    pass
+    counts = {}
+    failures = failed_requests(lines)
+    for line in failures:
+        user = line.split()[1]
+        counts[user] = counts.get(user, 0) + 1
+    return counts
 
 
 def users_at_or_over(counts, threshold):
     """Return a list of every user name in counts whose count is at or
     above threshold."""
-    pass
+    users = []
+    for user, count in counts.items():
+        if count >= threshold:
+            users.append(user)
+    return users
+
 
 
 page_counts = count_by_page(LOG_LINES)

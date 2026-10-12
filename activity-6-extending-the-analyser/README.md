@@ -14,8 +14,11 @@ and you are adding to a program that already works rather than starting one.
 Before writing anything, work out from the log by hand:
 
 - Which users made a request that did not return 200, and how many each?
+bob
+chen
+chen
 - Which of them made two or more?
-
+chen
 Write both answers down. They are what your code has to produce.
 
 ## Run
