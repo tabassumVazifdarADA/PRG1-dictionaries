@@ -28,7 +28,7 @@ def count_by_page(lines):
     """Return a dictionary of page name to number of requests."""
     counts = {}
     for line in lines:
-        page = line.split()[1]
+        page = line.split()[2]
         counts[page] = counts.get(page, 0) + 1
     return counts
 
@@ -39,6 +39,7 @@ def busiest_page(counts):
     highest = 0
     for page, count in counts.items():
         if count > highest:
+            highest = count
             busiest = page
     return busiest
 
@@ -47,7 +48,7 @@ def failed_requests(lines):
     """Return every line whose status code is not 200."""
     failures = []
     for line in lines:
-        if line.split()[3] != 200:
+        if line.split()[3] != "200":
             failures.append(line)
     return failures
 
